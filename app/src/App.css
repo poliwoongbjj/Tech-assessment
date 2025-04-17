@@ -1,3 +1,58 @@
 .App {
   text-align: center;
 }
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  gap: 50px;
+}
+
+.section-container:first-child {
+  flex: 2;
+}
+
+.section-container:last-child {
+  flex: 1;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.books-section {
+  flex: 3;
+  background-color: white;
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 4px;
+  width: 90%;
+}
+
+.favorites-section {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  width: 90%;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
